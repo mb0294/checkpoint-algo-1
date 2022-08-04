@@ -1,0 +1,20 @@
+ALGORITHM Checkpoint_algo
+VAR
+
+    ch: CHAR;
+    nbre_mot: INTEGER:=0;
+    nbre_caract:INTEGER:=0;
+    nbre_voyelles: INTEGER:=0;
+BEGIN
+ DO 
+Write ("entrer un caractère");
+ read(ch);
+nbre_caract:= nbre_caract+1;
+IF (ch=" ") THEN
+nbre_mot:= nbre_mot+1
+ELSE
+IF (UpperCase(ch[a])=="A")or(UpperCase(ch[a])=="I")or(UpperCase(ch[a])=="O")or(UpperCase(ch[a])=="E")or(UpperCase(ch[a])=="U")or(UpperCase(ch[a])=="Y")then
+nbre_voyelles: nbre_voyelles+1;
+WHILE (ch<> ".")
+Write ("the number of caracter",nbre_caract,"the number of word",nbre_mot,"the number of voyelle",nbre_voyelles);
+END
